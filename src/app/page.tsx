@@ -9,7 +9,7 @@ export default function Home() {
 
       <section
         id="hero"
-        className="flex flex-col lg:flex-row bg-hero-mobile bg-no-repeat bg-cover bg-right min-h-screen px-[10%] sm:bg-hero-tablet w-full lg:items-center lg:justify-center"
+        className="flex flex-col min-h-[750px] lg:flex-row bg-hero-mobile bg-no-repeat bg-cover bg-right px-[10%] sm:bg-hero-tablet w-full lg:items-center lg:justify-center h-full"
       >
         <aside className="lg:flex hidden w-1/2 h-full min-h-screen items-center justify-center bg-hero-desktop bg-cover bg-center">
           <div className="flex flex-col h-fit items-center justify-center bg-main-300 rounded-sm">
@@ -68,11 +68,11 @@ export default function Home() {
 
       <section
         id="about"
-        className="flex flex-col min-h-screen h-full py-12 items-center justify-around bg-about bg-cover bg-center bg-no-repeat w-full"
+        className="flex flex-col min-h-[800px] lg:min-h-[1024px] h-full py-12 items-center justify-around bg-about bg-cover bg-center bg-no-repeat w-full"
       >
         <h2 className="mt-8">Sobre mim</h2>
 
-        <div className="flex flex-col items-center justify-center w-4/5 lg:w-[400px] text-center gap-4 my-12">
+        <div className="flex flex-col items-center justify-center w-4/5 lg:w-[400px] text-center gap-4">
           <Image
             alt="Imagem de perfil do manu"
             src={"/images/manu-profile-2.png"}
@@ -110,7 +110,7 @@ export default function Home() {
           </p>
         </div>
 
-        <div className="flex flex-row items-center justify-center gap-8">
+        <div className="flex flex-row items-center justify-center gap-4 lg:gap-8">
           <Image
             alt="Ícone Css"
             src={"/icons/css.svg"}
