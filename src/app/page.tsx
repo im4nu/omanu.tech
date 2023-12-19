@@ -37,7 +37,7 @@ export default function Home() {
             <p>Front | Design</p>
           </div>
 
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl lg:w-4/5">
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl lg:w-4/5 capitalize">
             Engenheiro <span className="text-main-100">Front-end</span> e{" "}
             <span className="text-main-100">webdesigner</span>
           </h1>
