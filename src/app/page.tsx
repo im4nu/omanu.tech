@@ -1,9 +1,11 @@
-import { ArrowDown2 } from "iconsax-react";
+import Navbar from "@/components/navbar";
+import { ArrowDown2, ArrowRight, HambergerMenu } from "iconsax-react";
 import Image from "next/image";
 
 export default function Home() {
   return (
     <main className="w-full h-full flex flex-col items-center justify-center font-raleway text-white font-medium">
+      <Navbar />
       <section
         id="hero"
         className="flex flex-col lg:flex-row bg-hero-mobile bg-no-repeat bg-cover bg-right min-h-screen px-[10%] sm:bg-hero-tablet w-full lg:items-center lg:justify-center"
@@ -17,7 +19,7 @@ export default function Home() {
               height={403}
             />
 
-            <p className="my-6"># Emmanuel Rodrigues</p>
+            <p className="my-6">Emmanuel Rodrigues #manu</p>
           </div>
         </aside>
 
@@ -38,8 +40,16 @@ export default function Home() {
             <span className="text-main-100">webdesigner</span>
           </h1>
 
-          <a href="#" className="underline text-main-100 sm:text-lg">
-            {`Ver projetos online ->`}
+          <a
+            href="#"
+            className="underline group text-main-100 sm:text-lg flex flex-row items-center justify-center gap-3"
+          >
+            Ver projetos online
+            <ArrowRight
+              size="32"
+              variant="TwoTone"
+              className="group-hover:ml-2 ease-in duration-300"
+            />
           </a>
 
           <a
