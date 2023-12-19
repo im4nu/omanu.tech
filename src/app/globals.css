@@ -33,3 +33,6 @@ body {
 .hover\:animate-bounce-x:hover {
   animation: bounceX 1s infinite;
 }
+.gradient-bg{
+  background: linear-gradient(90deg, #0E002B 0%, #C1A4FF 100%);
+}

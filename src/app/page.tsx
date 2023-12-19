@@ -6,6 +6,7 @@ export default function Home() {
   return (
     <main className="w-full h-full flex flex-col items-center justify-center font-raleway text-white font-medium">
       <Navbar />
+
       <section
         id="hero"
         className="flex flex-col lg:flex-row bg-hero-mobile bg-no-repeat bg-cover bg-right min-h-screen px-[10%] sm:bg-hero-tablet w-full lg:items-center lg:justify-center"
@@ -64,6 +65,90 @@ export default function Home() {
       <div className="flex w-full justify-center -mt-28">
         <ArrowDown2 size="32" color="#FFF" className="animate-bounce" />
       </div>
+
+      <section
+        id="about"
+        className="flex flex-col min-h-screen h-full py-12 items-center justify-around bg-about bg-cover bg-center bg-no-repeat w-full"
+      >
+        <h2 className="mt-8">Sobre mim</h2>
+
+        <div className="flex flex-col items-center justify-center w-4/5 lg:w-[400px] text-center gap-4 my-12">
+          <Image
+            alt="Imagem de perfil do manu"
+            src={"/images/manu-profile-2.png"}
+            width={100}
+            height={100}
+          />
+
+          <p>
+            Sou um jovem de 21 anos, casado e cursando o{" "}
+            <span className="text-main-100">
+              {" "}
+              7° semestre de sistemas na unifap
+            </span>
+          </p>
+          <div className="flex w-full bg-white h-[1px]"></div>
+          <p>
+            Sempre fui criativo, gosto de games, tecnologia e também de música,
+            até tenho algumas escritas
+          </p>
+          <div className="flex w-full bg-white h-[1px]"></div>
+          <p>
+            Codo em <span className="text-main-100">REACT</span> usando{" "}
+            <span className="text-main-100">NEXTJS</span>,{" "}
+            <span className="text-main-100">TYPESCRIPT</span>,{" "}
+            <span className="text-main-100">TAILWINDCSS</span>. São minha stack
+            principal, além disso também uso react native para mobile
+          </p>
+          <div className="flex w-full bg-white h-[1px]"></div>
+          <p>
+            No mais é isso...{" "}
+            <span className="text-main-100">
+              Dá uma olhada em alguns projetos meus
+            </span>{" "}
+            pra você se inspirar e me contratar pra fazer um seu depois!{" "}
+          </p>
+        </div>
+
+        <div className="flex flex-row items-center justify-center gap-8">
+          <Image
+            alt="Ícone Css"
+            src={"/icons/css.svg"}
+            width={32}
+            height={32}
+          />
+          <Image
+            alt="Ícone Html"
+            src={"/icons/html.svg"}
+            width={32}
+            height={32}
+          />
+          <Image
+            alt="Ícone Nextjs"
+            src={"/icons/nextjs.svg"}
+            width={32}
+            height={32}
+          />
+          <Image
+            alt="Ícone React"
+            src={"/icons/react.svg"}
+            width={32}
+            height={32}
+          />
+          <Image
+            alt="Ícone Tailwind"
+            src={"/icons/tailwind.svg"}
+            width={32}
+            height={32}
+          />
+          <Image
+            alt="Ícone Typescript"
+            src={"/icons/typescript.svg"}
+            width={32}
+            height={32}
+          />
+        </div>
+      </section>
     </main>
   );
 }

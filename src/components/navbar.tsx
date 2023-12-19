@@ -5,7 +5,7 @@ import Image from "next/image";
 import React from "react";
 
 export default function Navbar() {
-  const [menuActive, setMenuActive] = React.useState(true);
+  const [menuActive, setMenuActive] = React.useState(false);
   return (
     <nav
       className={`w-full flex-col items-center flex justify-start fixed ease-linear duration-300 top-0 backdrop-blur-sm bg-white/10 ${
@@ -32,7 +32,7 @@ export default function Navbar() {
           </li>
           <li>
             <a
-              href="#hero"
+              href="#about"
               className="text-sm text-white/80 group hover:text-white ease-in duration-300 flex flex-col items-center justify-center"
             >
               Sobre mim
@@ -74,7 +74,7 @@ export default function Navbar() {
         </li>
         <li>
           <a
-            href="#teste1"
+            href="#about"
             onClick={() => setMenuActive(false)}
             className="text-sm text-main py-1 flex items-center w-full"
           >

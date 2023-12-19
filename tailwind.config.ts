@@ -21,6 +21,7 @@ const config: Config = {
       'hero-mobile': "url('/icons/logo-splash.svg')",
       'hero-tablet': "url('/icons/hero-tablet.svg')",
       'hero-desktop': "url('/icons/hero-desktop.svg')",
+      'about': "url('/icons/about.svg')",
      },
      }
     },
