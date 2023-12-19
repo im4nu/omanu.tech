@@ -1,5 +1,5 @@
 import Navbar from "@/components/Navbar";
-import { ArrowDown2, ArrowRight } from "iconsax-react";
+import { ArrowDown2, ArrowRight, ArrowUp2 } from "iconsax-react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -117,36 +117,42 @@ export default function Home() {
             src={"/icons/css.svg"}
             width={32}
             height={32}
+            className="hover:scale-125 ease-linear duration-300"
           />
           <Image
             alt="Ícone Html"
             src={"/icons/html.svg"}
             width={32}
             height={32}
+            className="hover:scale-125 ease-linear duration-300"
           />
           <Image
             alt="Ícone Nextjs"
             src={"/icons/nextjs.svg"}
             width={32}
             height={32}
+            className="hover:scale-125 ease-linear duration-300"
           />
           <Image
             alt="Ícone React"
             src={"/icons/react.svg"}
             width={32}
             height={32}
+            className="hover:scale-125 ease-linear duration-300"
           />
           <Image
             alt="Ícone Tailwind"
             src={"/icons/tailwind.svg"}
             width={32}
             height={32}
+            className="hover:scale-125 ease-linear duration-300"
           />
           <Image
             alt="Ícone Typescript"
             src={"/icons/typescript.svg"}
             width={32}
             height={32}
+            className="hover:scale-125 ease-linear duration-300"
           />
         </div>
       </section>
@@ -167,7 +173,6 @@ export default function Home() {
               alt="Ilustração do ícone figma"
               width={126}
               height={103}
-              className="animate-pulse"
             />
             <p className="underline">Protótipos</p>
           </Link>
@@ -181,7 +186,6 @@ export default function Home() {
               alt="Ilustração do ícone figma"
               width={126}
               height={103}
-              className="animate-pulse"
             />
             <p className="underline">Sites online</p>
           </Link>
@@ -200,6 +204,7 @@ export default function Home() {
           alt="Logomarca manu"
           width={100}
           height={120}
+          className="animate-pulse"
         />
 
         <p className="-mt-4">Manu</p>
@@ -226,6 +231,13 @@ export default function Home() {
           />
         </div>
       </footer>
+
+      <a
+        href="#hero"
+        className="rounded-full fixed bottom-4 right-4 bg-main-100/40 p-3 items-center justify-center flex"
+      >
+        <ArrowUp2 size="24" color="#FFF" />
+      </a>
     </main>
   );
 }

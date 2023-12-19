@@ -7,7 +7,7 @@ const inter = Inter({ subsets: ["latin"] });
 const raleway = Raleway({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Quer criar um site? | Fala com o manu dev!",
+  title: "O manu | Engenheiro Front-end e webdesigner",
   description: "Desenvolvimento de sites e aplicativos web e mobile.",
 };
 
