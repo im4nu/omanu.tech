@@ -8,13 +8,22 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
-      },
+     colors: {
+      main: '#0E002B',
+      'main-100': '#C1A4FF',
+      'main-300': '#7018FF',
+     },
+     fontFamily: {
+      raleway: ['Raleway', 'sans-serif'],
+      inter: ['Inter', 'sans-serif'], 
+     },
+     backgroundImage: {
+      'hero-mobile': "url('/icons/logo-splash.svg')",
+      'hero-tablet': "url('/icons/hero-tablet.svg')",
+      'hero-desktop': "url('/icons/hero-desktop.svg')",
+     },
+     }
     },
-  },
   plugins: [],
 }
 export default config
