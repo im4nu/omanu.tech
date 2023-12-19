@@ -1,6 +1,7 @@
-import Navbar from "@/components/navbar";
-import { ArrowDown2, ArrowRight, HambergerMenu } from "iconsax-react";
+import Navbar from "@/components/Navbar";
+import { ArrowDown2, ArrowRight } from "iconsax-react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -9,7 +10,7 @@ export default function Home() {
 
       <section
         id="hero"
-        className="flex flex-col min-h-[750px] lg:flex-row bg-hero-mobile bg-no-repeat bg-cover bg-right px-[10%] sm:bg-hero-tablet w-full lg:items-center lg:justify-center h-full"
+        className="flex flex-col min-h-[680px] lg:flex-row bg-hero-mobile bg-no-repeat bg-cover bg-right px-[10%] sm:bg-hero-tablet w-full lg:items-center lg:justify-center h-full"
       >
         <aside className="lg:flex hidden w-1/2 h-full min-h-screen items-center justify-center bg-hero-desktop bg-cover bg-center">
           <div className="flex flex-col h-fit items-center justify-center bg-main-300 rounded-sm">
@@ -24,7 +25,7 @@ export default function Home() {
           </div>
         </aside>
 
-        <div className="flex flex-col items-start justify-center pt-[124px] lg:pt-0 gap-8 lg:w-1/2 h-full lg:h-fit w-full">
+        <div className="flex flex-col items-start justify-center pt-[144px] lg:pt-0 gap-8 lg:w-1/2 h-full lg:h-fit w-full">
           <div className="flex flex-col sm:flex-row items-start sm:items-center gap-2 sm:justify-between w-full sm:w-4/5">
             <div className="flex flex-row items-center gap-2 font-semibold">
               <span className="flex rounded-lg bg-main-100 p-3 items-center text-main">
@@ -62,9 +63,9 @@ export default function Home() {
         </div>
       </section>
 
-      <div className="flex w-full justify-center -mt-28">
+      <a href="#about" className="flex justify-center -mt-28">
         <ArrowDown2 size="32" color="#FFF" className="animate-bounce" />
-      </div>
+      </a>
 
       <section
         id="about"
@@ -72,7 +73,7 @@ export default function Home() {
       >
         <h2 className="mt-8">Sobre mim</h2>
 
-        <div className="flex flex-col items-center justify-center w-4/5 lg:w-[400px] text-center gap-4">
+        <div className="flex flex-col items-center justify-center w-4/5 sm:w-[350px] lg:w-[400px] text-center gap-4">
           <Image
             alt="Imagem de perfil do manu"
             src={"/images/manu-profile-2.png"}
@@ -149,6 +150,82 @@ export default function Home() {
           />
         </div>
       </section>
+
+      <section
+        id="projects"
+        className="w-full flex flex-col items-center justify-center gap-6 mt-20"
+      >
+        <h2 className="w-2/5 text-center">Quais projetos você deseja ver?</h2>
+
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:justify-around w-4/5 sm:my-6">
+          <Link
+            href={""}
+            className="flex flex-col items-center gap-1 justify-center"
+          >
+            <Image
+              src={"/images/figma.png"}
+              alt="Ilustração do ícone figma"
+              width={126}
+              height={103}
+              className="animate-pulse"
+            />
+            <p className="underline">Protótipos</p>
+          </Link>
+
+          <Link
+            href={""}
+            className="flex flex-col items-center gap-1 justify-center"
+          >
+            <Image
+              src={"/images/vercel.png"}
+              alt="Ilustração do ícone figma"
+              width={126}
+              height={103}
+              className="animate-pulse"
+            />
+            <p className="underline">Sites online</p>
+          </Link>
+        </div>
+        <a
+          href="#"
+          className="rounded-xl items-center flex w-[180px] py-3 bg-main-300 justify-center font-medium hover:opacity-75 ease-in duration-300"
+        >
+          Ver todos
+        </a>
+      </section>
+
+      <footer className="flex flex-col my-12 text-center items-center justify-center gap-3">
+        <Image
+          src={"icons/logo.svg"}
+          alt="Logomarca manu"
+          width={100}
+          height={120}
+        />
+
+        <p className="-mt-4">Manu</p>
+        <p>@2024 - Todos os direitos reservados.</p>
+
+        <div className="flex flex-row items-center justify-center gap-6">
+          <Image
+            src={"icons/mail.svg"}
+            alt="Ícone gmail"
+            width={32}
+            height={32}
+          />
+          <Image
+            src={"icons/github.svg"}
+            alt="Ícone github"
+            width={32}
+            height={32}
+          />
+          <Image
+            src={"icons/linkedin.svg"}
+            alt="Ícone linkedin"
+            width={32}
+            height={32}
+          />
+        </div>
+      </footer>
     </main>
   );
 }

@@ -8,7 +8,7 @@ export default function Navbar() {
   const [menuActive, setMenuActive] = React.useState(false);
   return (
     <nav
-      className={`w-full flex-col items-center flex justify-start fixed ease-linear duration-300 top-0 backdrop-blur-sm bg-white/10 ${
+      className={`w-screen z-20 flex-col items-center flex justify-start fixed ease-linear duration-300 top-0 backdrop-blur-sm bg-white/10 ${
         menuActive ? "h-[256px]" : "h-[90px]"
       } `}
     >
@@ -41,7 +41,7 @@ export default function Navbar() {
           </li>
           <li>
             <a
-              href="#hero"
+              href="#projects"
               className="text-sm text-white/80 group hover:text-white ease-in duration-300 flex flex-col items-center justify-center"
             >
               Projetos
@@ -59,35 +59,23 @@ export default function Navbar() {
       </ul>
 
       <div
-        className={`flex bg-white absolute flex-col items-center justify-center pb-10 w-full gap-2 ease-in duration-300 ${
+        className={`flex bg-white absolute flex-col h-[164px] items-center justify-evenly w-full ease-in duration-300 ${
           menuActive ? "opacity-100 top-[92px]" : "opacity-0 top-[-150px]"
         }`}
       >
-        <li>
-          <a
-            href="#hero"
-            onClick={() => setMenuActive(false)}
-            className="text-sm text-main py-1 flex items-center w-full"
-          >
-            <p className="h-1">Início</p>
+        <li className="text-main w-full flex items-center justify-center">
+          <a href="#hero" onClick={() => setMenuActive(false)}>
+            Início
           </a>
         </li>
-        <li>
-          <a
-            href="#about"
-            onClick={() => setMenuActive(false)}
-            className="text-sm text-main py-1 flex items-center w-full"
-          >
-            <p className="h-1">Sobre mim</p>
+        <li className="text-main w-full flex items-center justify-center">
+          <a href="#about" onClick={() => setMenuActive(false)}>
+            Sobre mim
           </a>
         </li>
-        <li>
-          <a
-            href="#teste2"
-            onClick={() => setMenuActive(false)}
-            className="text-sm text-main py-1 flex items-center w-full"
-          >
-            <p className="h-1">Projetos</p>
+        <li className="text-main w-full flex items-center justify-center">
+          <a href="#projects" onClick={() => setMenuActive(false)}>
+            Projetos
           </a>
         </li>
       </div>
