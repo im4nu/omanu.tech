@@ -7,10 +7,10 @@ const inter = Inter({ subsets: ["latin"] });
 const raleway = Raleway({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "O manu | Engenheiro Front-end e webdesigner",
+  title: "O manu | Engenheiro Front-end e web designer",
   description: "Desenvolvimento de sites e aplicativos web e mobile.",
   openGraph: {
-    images: ["/images/site-preview.png"],
+    images: ["/images/preview-mobile.jpeg"],
   },
 };
 

@@ -39,7 +39,7 @@ export default function Home() {
 
           <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl lg:w-4/5 capitalize">
             Engenheiro <span className="text-main-100">Front-end</span> e{" "}
-            <span className="text-main-100">webdesigner</span>
+            <span className="text-main-100">web designer</span>
           </h1>
 
           <a
@@ -234,7 +234,7 @@ export default function Home() {
 
       <a
         href="#hero"
-        className="rounded-full fixed bottom-4 right-4 bg-main-100/40 p-3 items-center justify-center flex"
+        className="rounded-full fixed bottom-4 right-4 bg-main-100/40 p-3 items-center justify-center flex ease-in duration-300"
       >
         <ArrowUp2 size="24" color="#FFF" />
       </a>
