@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Motion from "./motion/Motion";
-import { ArrowRight2 } from "iconsax-react";
+import { ArrowRight2, ArrowUp2 } from "iconsax-react";
 
 interface ProductCardProps {
   title: string;
@@ -24,7 +24,7 @@ export default function ProductCard({
   development,
 }: ProductCardProps) {
   return (
-    <div className="flex flex-col relative px-6 py-4 lg:text-start gap-4 lg:gap-0 h-fit text-center w-4/5 lg:w-[300px] lg:h-[400px] border border-gray-600 rounded-xl bg-main justify-between items-center lg:items-start font-raleway">
+    <main className="flex flex-col relative px-6 py-4 lg:text-start gap-4 lg:gap-0 h-fit text-center w-4/5 lg:w-[300px] lg:h-[400px] border border-gray-600 rounded-xl bg-main justify-between items-center lg:items-start font-raleway">
       <Motion direction="left" identifier={identifier}>
         <Image
           alt="Ilustração do produto"
@@ -57,6 +57,13 @@ export default function ProductCard({
           </a>
         )}
       </div>
-    </div>
+
+      <a
+        href="#"
+        className="rounded-full fixed bottom-4 right-4 bg-main-100/10 p-3 items-center justify-center flex ease-in duration-300"
+      >
+        <ArrowUp2 size="24" color="#FFF" />
+      </a>
+    </main>
   );
 }
