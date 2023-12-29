@@ -10,6 +10,7 @@ interface ProductCardProps {
   link: string;
   identifier: number;
   index?: number;
+  development: boolean;
 }
 
 export default function ProductCard({
@@ -20,6 +21,7 @@ export default function ProductCard({
   title,
   identifier,
   index,
+  development,
 }: ProductCardProps) {
   return (
     <div className="flex flex-col relative px-6 py-4 lg:text-start gap-4 lg:gap-0 h-fit text-center w-4/5 lg:w-[300px] lg:h-[400px] border border-gray-600 rounded-xl bg-main justify-between items-center lg:items-start font-raleway">
@@ -42,14 +44,18 @@ export default function ProductCard({
 
       <div className="flex flex-col md:flex-row gap-2 lg:gap-6 md:gap-0 justify-between items-center z-20">
         <p className="text-xs text-gray-300">Tecnologias utilizadas: {tech}</p>
-        <a
-          target="_blank"
-          href={link}
-          className="flex flex-row items-center gap-2"
-        >
-          <p className="text-sm">Visitar</p>{" "}
-          <ArrowRight2 color="#FFF" size={24} />
-        </a>
+        {development ? (
+          <p className="text-sm hover:cursor-not-allowed">Em Breve</p>
+        ) : (
+          <a
+            target={!development ? "_blank" : "_self"}
+            href={link}
+            className="flex flex-row items-center gap-2"
+          >
+            <p className="text-sm">Visitar</p>{" "}
+            <ArrowRight2 color="#FFF" size={24} />
+          </a>
+        )}
       </div>
     </div>
   );

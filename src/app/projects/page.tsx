@@ -33,6 +33,7 @@ export default function Projects() {
               key={item.id}
               identifier={item.id}
               index={index}
+              development={item.development}
             />
           ))}
         </div>

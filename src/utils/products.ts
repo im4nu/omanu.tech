@@ -7,6 +7,7 @@ export const productsData = [
     tech: "React, NextJs, TypeScript, Vercel",
     link: "https://st-doctor-lp.vercel.app/",
     id: 0,
+    development: false,
   },
   {
     title: "EventoSmart - App de Gestão de Eventos",
@@ -15,7 +16,8 @@ export const productsData = [
     image: "/images/eventoSmart.png",
     tech: "React Native, Expo, TypeScript",
     link: "https://www.eventosmart.com.br/",
-    id: 4,
+    id: 1,
+    development: false,
   },
   {
     title: "Grupo W - Sistema de Networking feminino",
@@ -24,7 +26,8 @@ export const productsData = [
     image: "/icons/grupo-w-logo.svg",
     tech: "React, NextJs, TypeScript, Vercel",
     link: "https://www.ogrupow.com.br/",
-    id: 5,
+    id: 2,
+    development: false,
   },
   {
     title: "Catedral RECON app",
@@ -33,7 +36,8 @@ export const productsData = [
     image: "/images/recon.webp",
     tech: "React Native, Expo, TypeScript, Styled Components",
     link: "https://play.google.com/store/search?q=catedral%20Recon&c=apps&hl=pt_BR&gl=US",
-    id: 6,
+    id: 3,
+    development: false,
   },
   {
     title: "Genius Line - EM DESENVOLVIMENTO",
@@ -42,7 +46,8 @@ export const productsData = [
     image: "/icons/genius-line-logo.svg",
     tech: "React Native, Expo, TypeScript, NativeWindCss",
     link: "#",
-    id: 6,
+    id: 4,
+    development: true,
   },
   {
     title: "PersonNow - EM DESENVOLVIMENTO",
@@ -51,6 +56,7 @@ export const productsData = [
     image: "/icons/person-now-logo.svg",
     tech: "React Native, Expo, TypeScript, NativeWindCss",
     link: "#",
-    id: 7,
+    id: 5,
+    development: true,
   },
 ];
