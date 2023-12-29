@@ -191,12 +191,12 @@ export default function Home() {
             <p className="underline">Projetos online</p>
           </Link>
         </div>
-        <a
-          href="#"
+        <Link
+          href="/projects"
           className="rounded-xl items-center flex w-[180px] py-3 bg-main-300 justify-center font-medium hover:opacity-75 ease-in duration-300"
         >
           Ver todos
-        </a>
+        </Link>
       </section>
 
       <Footer />

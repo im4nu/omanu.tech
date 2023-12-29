@@ -15,24 +15,30 @@ export default function Footer() {
       <p>@2024 - Todos os direitos reservados.</p>
 
       <div className="flex flex-row items-center justify-center gap-6">
-        <Image
-          src={"icons/mail.svg"}
-          alt="Ícone gmail"
-          width={32}
-          height={32}
-        />
-        <Image
-          src={"icons/github.svg"}
-          alt="Ícone github"
-          width={32}
-          height={32}
-        />
-        <Image
-          src={"icons/linkedin.svg"}
-          alt="Ícone linkedin"
-          width={32}
-          height={32}
-        />
+        <a href="mailto:victorx811@gmail.com">
+          <Image
+            src={"icons/mail.svg"}
+            alt="Ícone gmail"
+            width={32}
+            height={32}
+          />
+        </a>
+        <a href="https://www.linkedin.com/in/m4nu/">
+          <Image
+            src={"icons/github.svg"}
+            alt="Ícone github"
+            width={32}
+            height={32}
+          />
+        </a>
+        <a href="https://github.com/im4nu">
+          <Image
+            src={"icons/linkedin.svg"}
+            alt="Ícone linkedin"
+            width={32}
+            height={32}
+          />
+        </a>
       </div>
     </footer>
   );
