@@ -1,3 +1,4 @@
+import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import { ArrowDown2, ArrowRight, ArrowUp2 } from "iconsax-react";
 import Image from "next/image";
@@ -165,7 +166,7 @@ export default function Home() {
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:justify-around w-4/5 sm:my-6">
           <Link
-            href={""}
+            href={"/prorotype"}
             className="flex flex-col items-center gap-1 justify-center"
           >
             <Image
@@ -178,16 +179,16 @@ export default function Home() {
           </Link>
 
           <Link
-            href={""}
+            href={"/projects"}
             className="flex flex-col items-center gap-1 justify-center"
           >
             <Image
-              src={"/images/vercel.png"}
-              alt="Ilustração do ícone figma"
+              src={"/images/projects.png"}
+              alt="Ilustração do ícone da apple, play store e vercel"
               width={126}
               height={103}
             />
-            <p className="underline">Sites online</p>
+            <p className="underline">Projetos online</p>
           </Link>
         </div>
         <a
@@ -198,39 +199,7 @@ export default function Home() {
         </a>
       </section>
 
-      <footer className="flex flex-col my-12 text-center items-center justify-center gap-3">
-        <Image
-          src={"icons/logo.svg"}
-          alt="Logomarca manu"
-          width={100}
-          height={120}
-          className="animate-pulse"
-        />
-
-        <p className="-mt-4">Manu</p>
-        <p>@2024 - Todos os direitos reservados.</p>
-
-        <div className="flex flex-row items-center justify-center gap-6">
-          <Image
-            src={"icons/mail.svg"}
-            alt="Ícone gmail"
-            width={32}
-            height={32}
-          />
-          <Image
-            src={"icons/github.svg"}
-            alt="Ícone github"
-            width={32}
-            height={32}
-          />
-          <Image
-            src={"icons/linkedin.svg"}
-            alt="Ícone linkedin"
-            width={32}
-            height={32}
-          />
-        </div>
-      </footer>
+      <Footer />
 
       <a
         href="#hero"
