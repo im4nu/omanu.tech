@@ -43,8 +43,8 @@ export default function Home() {
             <span className="text-main-100">web designer</span>
           </h1>
 
-          <a
-            href="#"
+          <Link
+            href="/projects"
             className="underline group text-main-100 sm:text-lg flex flex-row items-center justify-center gap-3"
           >
             Ver projetos online
@@ -53,10 +53,10 @@ export default function Home() {
               variant="TwoTone"
               className="group-hover:ml-2 ease-in duration-300"
             />
-          </a>
+          </Link>
 
           <a
-            href="#"
+            href="#about"
             className="rounded-xl items-center flex w-[180px] py-3 bg-main-300 justify-center font-medium hover:opacity-75 ease-in duration-300"
           >
             Saber mais

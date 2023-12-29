@@ -22,14 +22,14 @@ export default function LinkDemo({
     <Link
       {...rest}
       href={link}
-      className={`flex items-center justify-center rounded-[36px] text-white px-8 py-4 hover:scale-105 hover:cursor-pointer ease-linear duration-300 ${
+      className={`flex items-center justify-center rounded-xl text-white px-8 py-4 hover:opacity-80 hover:cursor-pointer ease-linear duration-300 ${
         size === "small" ? "text-xs" : ""
       } ${size === "medium" ? "text-sm" : ""} ${
         size === "large" ? "text-base" : ""
       } ${
         variant === "outlined"
-          ? "bg-[#080D29] border border-[#282D45]"
-          : " bg-main"
+          ? "bg-white/10 border border-main"
+          : " bg-main-300"
       }
       ${className ? className : ""}
       `}

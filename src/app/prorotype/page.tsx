@@ -1,13 +1,11 @@
 import Footer from "@/components/Footer";
-import ProductCard from "@/components/ProductCard";
 import LinkDemo from "@/components/ui/Link";
-import { productsData } from "@/utils/products";
-import { ArrowLeft2 } from "iconsax-react";
+import { ArrowLeft2, ArrowRight2, Link } from "iconsax-react";
 import Image from "next/image";
 
 export default function Prototype() {
   return (
-    <main className="flex relative min-h-screen w-screen items-center justify-center overflow-hidden font-raleway">
+    <main className="flex relative min-h-screen w-screen items-start justify-center overflow-hidden font-raleway">
       <div className="flex flex-col items-center justify-start w-4/5 md:w-[70%] text-white mt-8">
         <div className="flex flex-col items-start gap-3 justify-center w-full">
           <LinkDemo variant="outlined" link={"/"}>
@@ -26,14 +24,23 @@ export default function Prototype() {
           <Image
             src={"/icons/oops.svg"}
             alt="Ilustração de erro"
-            width={100}
-            height={100}
+            width={240}
+            height={240}
           />
-          <p>
+          <p className="text-center">
             Página ainda em desenvolvimento, clique no botão abaixo e confira
             alguns dos projetos que já tive a oportunidade de participar do
             desenvolvimento
           </p>
+
+          <LinkDemo variant="contained" link={"/projects"}>
+            <p> Ver projetos online</p>
+            <ArrowRight2
+              size="32"
+              variant="TwoTone"
+              className="group-hover:ml-2 ease-in duration-300"
+            />
+          </LinkDemo>
         </div>
         <Footer />
       </div>
