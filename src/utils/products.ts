@@ -15,7 +15,7 @@ export const productsData = [
       "Aplicativo ios e android para gestão de eventos completo.",
     image: "/images/eventoSmart.png",
     tech: "React Native, Expo, TypeScript",
-    link: "https://www.eventosmart.com.br/",
+    link: "https://apps.apple.com/br/app/eventosmart/id6465455717",
     id: 1,
     development: false,
   },
