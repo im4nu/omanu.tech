@@ -47,7 +47,7 @@ export const productsData = [
     tech: "React Native, Expo, TypeScript, NativeWindCss",
     link: "https://apps.apple.com/br/app/genius-line/id6470222493",
     id: 4,
-    development: true,
+    development: false,
   },
   {
     title: "PersonNow - EM DESENVOLVIMENTO",
