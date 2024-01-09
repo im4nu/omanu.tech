@@ -18,12 +18,12 @@ export default function Footer() {
         <a href="mailto:victorx811@gmail.com">
           <Image
             src={"icons/mail.svg"}
-            alt="Ícone gmail"
+            alt="Ícone g-mail"
             width={32}
             height={32}
           />
         </a>
-        <a href="https://www.linkedin.com/in/m4nu/">
+        <a href="https://github.com/im4nu">
           <Image
             src={"icons/github.svg"}
             alt="Ícone github"
@@ -31,10 +31,10 @@ export default function Footer() {
             height={32}
           />
         </a>
-        <a href="https://github.com/im4nu">
+        <a href="https://www.linkedin.com/in/m4nu/">
           <Image
             src={"icons/linkedin.svg"}
-            alt="Ícone linkedin"
+            alt="Ícone linkedIn"
             width={32}
             height={32}
           />
