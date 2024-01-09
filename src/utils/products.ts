@@ -40,12 +40,12 @@ export const productsData = [
     development: false,
   },
   {
-    title: "Genius Line - EM DESENVOLVIMENTO",
+    title: "Genius Line - App para parques",
     description:
-      "Aplicativo para gerenciar filas de parques de diversão.",
+      "Aplicativo para otimizar filas de parques de diversão como Disney, Universal Studios e outros.",
     image: "/icons/genius-line-logo.svg",
     tech: "React Native, Expo, TypeScript, NativeWindCss",
-    link: "#",
+    link: "https://apps.apple.com/br/app/genius-line/id6470222493",
     id: 4,
     development: true,
   },
