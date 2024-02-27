@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   title: "O manu | Engenheiro Front-end e web designer",
   description: "Desenvolvimento de sites e aplicativos web e mobile.",
   openGraph: {
-    images: "/mobilePreview.gif",
+    images: "/mobilePreview.png",
   },
 };
 
@@ -29,7 +29,7 @@ export default function RootLayout({
         <link rel="canonical" href="https://omanu.tech" />
         <meta
           property="og:image"
-          content="https://omanu.tech/mobilePreview.gif"
+          content="https://omanu.tech/mobilePreview.png"
         />
 
         <meta property="og:image" content="<generated>" />
