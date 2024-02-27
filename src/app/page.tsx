@@ -83,32 +83,33 @@ export default function Home() {
           />
 
           <p>
-            Sou um jovem de 21 anos, casado e cursando o{" "}
+            Olá! Sou um jovem de 21 anos apaixonado por tecnologia, atualmente
+            cursando o
             <span className="text-main-100">
               {" "}
-              7° semestre de sistemas na unifap
+              7º semestre de Sistemas na UNIFAP.
             </span>
           </p>
           <div className="flex w-full bg-white h-[1px]"></div>
           <p>
-            Sempre fui criativo, gosto de games, tecnologia e também de música,
-            até tenho algumas escritas
-          </p>
-          <div className="flex w-full bg-white h-[1px]"></div>
-          <p>
-            Codo em <span className="text-main-100">REACT</span> usando{" "}
-            <span className="text-main-100">NEXTJS</span>,{" "}
-            <span className="text-main-100">TYPESCRIPT</span>,{" "}
-            <span className="text-main-100">TAILWINDCSS</span>. São minha stack
-            principal, além disso também uso react native para mobile
+            Codo em{" "}
+            <span className="text-main-100">
+              React, Next.js, TypeScript e Tailwind CSS.
+            </span>{" "}
+            Essas são as ferramentas que utilizo para criar experiências
+            digitais incríveis e responsivas. Além disso,{" "}
+            <span className="text-main-100">
+              tenho trabalhado em diversos projetos em React Native,
+            </span>{" "}
+            trazendo ideias para a palma da sua mão.
           </p>
           <div className="flex w-full bg-white h-[1px]"></div>
           <p>
             No mais é isso...{" "}
             <span className="text-main-100">
-              Dá uma olhada em alguns projetos meus
-            </span>{" "}
-            pra você se inspirar e me contratar pra fazer um seu depois!{" "}
+              Abaixo você confere algumas das tecnologias que uso no meu
+              dia-dia.
+            </span>
           </p>
         </div>
 
