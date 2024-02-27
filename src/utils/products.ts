@@ -44,7 +44,7 @@ export const productsData = [
     title: "Catedral RECON - App da Igreja Recon",
     description:
       "Aplicativo ios e android para a igreja catedral da reconciliação manter seus eventos, contribuições, vídeos e podcasts no ar.",
-    image: "/images/recon.webp",
+    image: "/images/recon.png",
     tech: "React Native, Expo, TypeScript, Styled Components",
     link: "https://play.google.com/store/search?q=catedral%20Recon&c=apps&hl=pt_BR&gl=US",
     id: 4,
