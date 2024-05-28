@@ -31,9 +31,7 @@ export default function ProductCard({
           src={image}
           width={342}
           height={180}
-          className={`z-20 h-[180px] object-contain rounded-xl ${
-            index === 1 ? "bg-transparent" : "bg-white"
-          }`}
+          className={`z-20 h-[180px] object-contain rounded-xl ${"bg-white"}`}
         />
       </Motion>
 

@@ -1,7 +1,8 @@
 import Footer from "@/components/Footer";
+import ProductCard from "@/components/ProductCard";
 import LinkDemo from "@/components/ui/Link";
-import { ArrowLeft2, ArrowRight2, Link } from "iconsax-react";
-import Image from "next/image";
+import { prototypesData } from "@/utils/prototypes";
+import { ArrowLeft2 } from "iconsax-react";
 
 export default function Prototype() {
   return (
@@ -13,34 +14,27 @@ export default function Prototype() {
           </LinkDemo>
 
           <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold w-4/5">
-            Oops...
+            Confira alguns dos protótipos que desenvolvi!
           </h2>
-          {/* <p className="text-gray-300 text-xs md:text-lg lg:text-xl">
+          <p className="text-gray-300 text-xs md:text-lg lg:text-xl">
             {`Clique em "Visitar" para ver cada projeto em funcionamento`}
-          </p> */}
+          </p>
         </div>
 
         <div className="flex flex-col lg:flex-row flex-wrap md:w-4/5 items-center justify-center gap-12 mt-6 w-full">
-          <Image
-            src={"/icons/oops.svg"}
-            alt="Ilustração de erro"
-            width={240}
-            height={240}
-          />
-          <p className="text-center">
-            Página ainda em desenvolvimento, clique no botão abaixo e confira
-            alguns dos projetos que já tive a oportunidade de participar do
-            desenvolvimento
-          </p>
-
-          <LinkDemo variant="contained" link={"/projects"}>
-            <p> Ver projetos online</p>
-            <ArrowRight2
-              size="32"
-              variant="TwoTone"
-              className="group-hover:ml-2 ease-in duration-300"
+          {prototypesData.map((item, index) => (
+            <ProductCard
+              description={item.description}
+              image={item.image}
+              tech={item.tech}
+              link={item.link}
+              title={item.title}
+              key={item.id}
+              identifier={item.id}
+              index={index}
+              development={item.development}
             />
-          </LinkDemo>
+          ))}
         </div>
         <Footer />
       </div>
