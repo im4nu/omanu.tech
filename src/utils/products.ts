@@ -19,7 +19,16 @@ export const productsData = [
     id: 1,
     development: false,
   },
-
+  {
+    title: "GPT Helper - Sistema",
+    description:
+      "Sistema para melhorar prompts de comando do chatgpt e auxiliar no dia a dia de profissionais de diversas áreas.",
+    image: "/icons/gpthelper.svg",
+    tech: "React, NextJs, TypeScript, Vercel",
+    link: "https://gpthelper.com.br/",
+    id: 7,
+    development: false,
+  },
   {
     title: "Grupo W - E-commerce de Networking feminino",
     description:
